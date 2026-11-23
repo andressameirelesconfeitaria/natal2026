@@ -1,4 +1,5 @@
 /* Catálogo independente — Natal 2026 | Andressa Meireles Confeitaria */
+const NATAL_CART_STORAGE_KEY = 'andressa-meireles:natal-2026:cart:v1';
 let cart = [];
 let currentDetailProductId = null;
 let currentDetailQty = 1;
@@ -687,9 +688,65 @@ function sendOrderToWhatsApp() {
 
 
 
+        // Persiste a sacola no navegador para que ela sobreviva ao fechamento da página.
+        // localStorage é apropriado aqui: não depende de cookies nem de uma sessão ativa.
+        function saveCartToStorage() {
+            try {
+                if (!cart.length) {
+                    localStorage.removeItem(NATAL_CART_STORAGE_KEY);
+                    return;
+                }
+                const payload = {
+                    version: 1,
+                    updatedAt: Date.now(),
+                    items: cart.map(item => ({
+                        name: String(item.name || ''),
+                        details: String(item.details || ''),
+                        price: Number(item.price),
+                        qty: Number(item.qty),
+                        ...(item.collection ? { collection: String(item.collection) } : {})
+                    }))
+                };
+                localStorage.setItem(NATAL_CART_STORAGE_KEY, JSON.stringify(payload));
+            } catch (error) {
+                // Se o navegador bloquear armazenamento, a sacola continua funcionando nesta visita.
+                console.warn('Não foi possível salvar a sacola neste navegador.', error);
+            }
+        }
+
+        function restoreCartFromStorage() {
+            try {
+                const raw = localStorage.getItem(NATAL_CART_STORAGE_KEY);
+                if (!raw) return;
+                const payload = JSON.parse(raw);
+                if (!payload || payload.version !== 1 || !Array.isArray(payload.items)) {
+                    localStorage.removeItem(NATAL_CART_STORAGE_KEY);
+                    return;
+                }
+                cart = payload.items
+                    .filter(item => item && typeof item.name === 'string' && item.name.trim() &&
+                        Number.isFinite(Number(item.price)) && Number(item.price) >= 0 &&
+                        Number.isFinite(Number(item.qty)) && Number(item.qty) > 0)
+                    .map(item => ({
+                        name: item.name,
+                        details: String(item.details || ''),
+                        price: Number(item.price),
+                        qty: Math.max(1, Math.floor(Number(item.qty))),
+                        ...(item.collection ? { collection: String(item.collection) } : {})
+                    }));
+                if (!cart.length) localStorage.removeItem(NATAL_CART_STORAGE_KEY);
+            } catch (error) {
+                cart = [];
+                try { localStorage.removeItem(NATAL_CART_STORAGE_KEY); } catch (_) {}
+                console.warn('Não foi possível recuperar a sacola salva.', error);
+            }
+        }
+
         function updateCartBadge() {
             const totalQty = cart.reduce((acc, item) => acc + item.qty, 0);
-            document.getElementById('cartCountBadge').innerText = totalQty;
+            const badge = document.getElementById('cartCountBadge');
+            if (badge) badge.innerText = totalQty;
+            saveCartToStorage();
         }
 
 
@@ -810,6 +867,7 @@ function sendOrderToWhatsApp() {
         }
 
 function initNatalOnly() {
+    restoreCartFromStorage();
     renderNatalCatalog('all');
     updateCartBadge();
 }
