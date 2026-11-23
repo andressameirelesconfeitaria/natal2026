@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Ceia de Natal 2026 | Andressa Meireles Confeitaria</title>
+<meta name="description" content="Encomende presentes, sobremesas e salgados para a ceia de Natal 2026. Escolha seus produtos e finalize pelo WhatsApp.">
+<meta name="theme-color" content="#FAF7F2">
+<meta property="og:type" content="website"><meta property="og:title" content="Ceia de Natal 2026 | Andressa Meireles Confeitaria"><meta property="og:description" content="Presentes, sobremesas e salgados para sua ceia. Confira o catálogo de Natal 2026.">
+<link rel="icon" type="image/svg+xml" href="assets/47395fdd01674538.svg">
+<link rel="stylesheet" href="assets/loja.css?v=20261123-3">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Ceia de Natal 2026 | Andressa Meireles Confeitaria","description":"Catálogo de presentes, sobremesas e salgados para a ceia de Natal 2026.","inLanguage":"pt-BR","publisher":{"@type":"Organization","name":"Andressa Meireles Confeitaria","telephone":"+5521981541545","url":"https://andressameireles.com.br/"}}</script>
+</head><body class="bg-[#FAF7F2] text-[#38201D] antialiased selection:bg-[#C5A059] selection:text-white">
+
+<header class="natal-header sticky top-0 z-40 bg-[#FAF7F2]/95 backdrop-blur-md border-b border-gray-200">
+  <div class="natal-header-inner max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-3">
+    <button type="button" onclick="openNatalPage('all')" class="natal-brand text-left" aria-label="Andressa Meireles Confeitaria — Natal 2026">
+      <img class="natal-logo-seal" src="assets/47395fdd01674538.svg" alt="" width="48" height="48" decoding="async">
+      <img class="natal-logo-wordmark" src="assets/deae7df1a5c90ec4.svg" alt="" width="208" height="30" decoding="async">
+    </button>
+    <div class="hidden sm:block text-center">
+      <span class="block text-[10px] uppercase tracking-[.22em] text-[#8B6A48] font-bold">Edição especial</span>
+      <span class="font-serif italic text-xl text-[#7A1C1C]">Natal 2026</span>
+    </div>
+    <button type="button" onclick="switchView('checkout')" class="natal-cart-button relative flex items-center gap-2 border border-[#C5A059] bg-white px-3 sm:px-4 py-2 text-xs font-bold uppercase tracking-wider hover:bg-[#38201D] hover:text-white transition-colors" aria-label="Abrir sacola">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M3 3h2l2.3 12.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 8H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+      <span class="hidden sm:inline">Minha sacola</span><span id="cartCountBadge" class="inline-grid place-items-center min-w-5 h-5 px-1 rounded-full bg-[#7A1C1C] text-white text-[10px]">0</span>
+    </button>
+  </div>
+</header>
+<div id="toastNotification" class="fixed bottom-5 right-5 z-[80] max-w-sm bg-[#38201D] text-[#FAF7F2] border-l-4 border-[#D4AF37] px-5 py-3.5 shadow-2xl transform pointer-events-none transition-all duration-300 flex items-center gap-3 translate-y-24 opacity-0"><span class="text-[#D4AF37] font-bold text-base">✓</span><span id="toastMessage" class="text-xs font-semibold tracking-wide"></span></div>
+<div id="pageLoader" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#FAF7F2] transition-opacity duration-300 opacity-0 pointer-events-none"><div class="relative w-20 h-20 flex items-center justify-center"><div class="absolute inset-0 rounded-full border-2 border-[#C5A059]/30 border-t-[#C5A059] animate-orbital"></div><span class="am-initials" aria-hidden="true"></span></div><span class="mt-4 font-serif italic text-sm tracking-widest text-[#38201D]/70">Andressa Meireles Confeitaria</span></div>
+<main id="appContent">
+<div class="view-section" id="view-natal">
+<!-- Banner Editorial Natal 2026 -->
+<section aria-label="Destaques de Natal" aria-roledescription="carrossel" class="natal-carousel">
+<div aria-label="Imagens do cardápio" class="natal-track" id="natalSlides" tabindex="0"><article class="natal-slide"><img alt="Coleção Natal 2026 Andressa Meireles" class="absolute inset-0 w-full h-full object-cover" data-relative-path="imagens/banner-natal-2026.jpg" fetchpriority="high" id="natalBannerImg" loading="eager" src="imagens/banner-natal-2026.jpg"/><h1 class="font-serif"><button onclick="openNatalPage('all')" type="button">Cardápio de Natal 2026</button></h1></article>
+<article class="natal-slide"><img alt="Presentes de Natal" data-relative-path="imagens/ceia26-01.jpg" decoding="async" fetchpriority="auto" loading="lazy" src="imagens/ceia26-01.jpg"/><h2 class="font-serif"><button onclick="openNatalPage('Presentes de Natal')">Presentes de Natal</button></h2></article>
+<article class="natal-slide"><img alt="Sobremesas da ceia" data-relative-path="imagens/ceia26-11.jpg" decoding="async" fetchpriority="auto" loading="lazy" src="imagens/ceia26-11.jpg"/><h2 class="font-serif"><button onclick="openNatalPage('Sobremesas da ceia')">Sobremesas da ceia</button></h2></article>
+<article class="natal-slide"><img alt="Salgados para o Natal" data-relative-path="imagens/ceia26-22.jpg" decoding="async" fetchpriority="auto" loading="lazy" src="imagens/ceia26-22.jpg"/><h2 class="font-serif"><button onclick="openNatalPage('Salgados')" type="button">Salgados</button></h2></article>
+</div>
+<div class="natal-arrows"><button aria-label="Imagem anterior" onclick="moveNatalSlide(-1)"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="m14.5 6-6 6 6 6"></path></svg></button><button aria-label="Próxima imagem" onclick="moveNatalSlide(1)"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="m9.5 6 6 6-6 6"></path></svg></button></div>
+</section>
+<div class="ready-catalog"><div class="natal-title-download"><h2 class="font-serif">Natal 2026</h2><a download="" href="catalogos/cardapio-natal-2026.pdf">Baixar catálogo em PDF</a></div><div class="ready-tools"><label>Filtrar por categoria<select id="natalCategory" onchange="renderNatalCatalog(this.value)"><option value="all">Todos os produtos</option></select></label><span aria-live="polite" id="natalProductsCountLabel"></span></div><div id="natalProductsGrid"><article><h3>Brownies Natalinos</h3><p>Embalagem de 7 × 7 cm.</p></article><article><h3>Pão de mel</h3><p>Recheio de doce de leite.</p></article><article><h3>Caixa de docinhos</h3><p>Brigadeiros de chocolate gourmet.</p></article><article><h3>Mini chocotone com gotas de chocolate</h3><p>Mini chocotone de 100 g para presentear.</p></article><article><h3>Mini chocotone recheado</h3><p>Mini chocotone recheado de 170 g.</p></article><article><h3>Guirlanda de chocolate</h3><p>Brownie de chocolate com brigadeiro de 50% cacau e brigadeiros de chocolate. 20 cm.</p></article><article><h3>Guirlanda de brownie</h3><p>Brownie de chocolate com brigadeiro de Ninho e Nutella, Kinder Bueno e brigadeiros de Ninho com Nutella. 20 cm.</p></article><article><h3>Rabanada tradicional</h3><p>Porção com 15 unidades.</p></article><article><h3>Rabanada recheada</h3><p>Escolha a porção e o recheio.</p></article><article><h3>Pudim de leite condensado</h3><p>Aproximadamente 1,3 kg.</p></article><article><h3>Pavê de limão</h3><p>Biscoito e mousse de limão.</p></article><article><h3>Pavê de maracujá com chocolate</h3><p>Mousse de maracujá e ganache de chocolate ao leite.</p></article><article><h3>Bombom de uva</h3><p>Creme de Ninho, uvas verdes e ganache de chocolate.</p></article><article><h3>Travessa brownie com morangos</h3><p>Brownie, creme de Ninho, morangos e chantininho.</p></article><article><h3>Banoffee</h3><p>Base de biscoito, doce de leite, creme de Ninho, banana caramelada e chantilly.</p></article><article><h3>Bolo gelado de abacaxi</h3><p>Massa branca com recheio de abacaxi, chantilly, abacaxi e cerejas.</p></article><article><h3>Bolo natalino</h3><p>Bolo de 10 fatias com topper.</p></article><article><h3>Kit festa natalino</h3><p>Bolo no acetato com topper de 15 cm (aprox. 1 kg), 60 salgadinhos e 25 docinhos.</p></article><article><h3>Salgadinhos</h3><p>Coxinha, bolinha de queijo, enroladinho de queijo com presunto, kibe e aipim com carne.</p></article><article><h3>Risoles de bacalhau</h3><p>Porções de 50 ou 100 unidades.</p></article><article><h3>Bolinho de bacalhau</h3><p>Escolha a porção.</p></article><article><h3>Empadão de frango com Catupiry</h3><p>Escolha o tamanho do empadão.</p></article></div></div>
+</div>
+<div class="view-section hidden" id="view-product-detail">
+<div class="bg-white border-b border-gray-200 py-3.5 px-4">
+<div class="max-w-[1020px] w-[86%] mx-auto flex flex-wrap items-center justify-between gap-3">
+<div class="flex items-center gap-2 text-xs text-[#6E5034]">
+<button class="hover:text-[#38201D] font-semibold cursor-pointer" onclick="openNatalPage('all')">Natal 2026</button>
+<span>/</span>
+<button class="hover:text-[#38201D] cursor-pointer" id="pdBreadcrumbCat" onclick="openNatalPage('all')">Natal 2026</button>
+<span>/</span>
+<span class="text-[#38201D] font-bold truncate max-w-[200px] sm:max-w-xs" id="pdBreadcrumbName">Produto</span>
+</div>
+<button class="text-xs font-bold uppercase tracking-wider text-[#38201D] hover:text-[#C5A059] flex items-center gap-1 cursor-pointer" id="pdBackBtn" onclick="openNatalPage('all')">
+<span>← Voltar aos Produtos</span>
+</button>
+</div>
+</div>
+<section class="max-w-[1020px] w-[86%] mx-auto py-8 sm:py-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+<!-- Coluna Esquerda: Galeria de Fotos -->
+<div class="lg:col-span-6 space-y-3">
+<div class="relative w-full aspect-[3/4] bg-white border border-gray-200/80 shadow-sm overflow-hidden group">
+<img alt="Produto da coleção Natal 2026" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-relative-path="imagens/natal-brownies-natalinos.jpg" decoding="async" id="pdMainImg" loading="lazy" src="imagens/natal-brownies-natalinos.jpg"/>
+<div class="absolute top-3 left-3 bg-[#38201D] text-[#D4AF37] text-[10px] font-mono font-bold px-2.5 py-1 shadow-xs" id="pdCodeBadge">
+                                #KIT01
+                            </div>
+<div class="absolute top-3 right-3 bg-[#FAF7F2]/95 backdrop-blur-xs text-[#38201D] text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 border border-gray-200 shadow-xs" id="pdAvailabilityCornerBadge">
+                                Pronta Entrega
+                            </div>
+</div>
+<div class="flex items-center gap-3" id="pdThumbnailsRow"></div>
+</div>
+<!-- Coluna Direita: Informações, Destaques, Opções e Descrição -->
+<div class="lg:col-span-6 space-y-6 text-left">
+<div class="border-b border-gray-200 pb-5">
+<div class="flex items-center gap-2">
+<span class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C5A059]" id="pdCategoryTag">NATAL 2026</span>
+<span class="text-gray-300">•</span>
+<span class="text-[11px] font-semibold text-emerald-700 flex items-center gap-1" id="pdStockStatusText">● Em estoque</span>
+</div>
+<h1 class="font-serif text-3xl sm:text-4xl font-bold text-[#38201D] mt-1 leading-tight" id="pdTitle">Nome do Produto</h1>
+<div class="mt-4 flex items-baseline gap-3 flex-wrap">
+<span class="font-serif text-3xl sm:text-4xl font-bold text-[#38201D]" id="pdPrice">R$ 0,00</span>
+<span class="text-[11px] font-semibold text-[#6E5034] bg-[#FAF7F2] border border-[#EDE5DC] px-2.5 py-1" id="pdTaglineBadge">Edição Especial Natal 2026</span>
+</div>
+<p class="text-xs sm:text-sm text-[#38201D]/85 leading-relaxed mt-4 font-medium" id="pdShortDesc"></p>
+</div>
+<!-- Destaques Rápidos (Loja Principal) -->
+
+<!-- Opções de Presente (Coleção Natal 2026) -->
+<div class="space-y-3" hidden="" id="pdNatalChoices">
+<fieldset><legend class="font-semibold text-sm mb-2">Porção ou pacote</legend><div class="divide-y border bg-white" id="pdNatalPack"></div></fieldset>
+<fieldset><legend class="font-semibold text-sm mb-2">Sabor</legend><div class="divide-y border bg-white" id="pdNatalFlavor"></div></fieldset>
+
+</div><a class="text-sm underline inline-block mt-3" hidden="True" href="https://drive.google.com/file/d/19vDT4U8dA9u_bXCgV6QuLsPuKzKl5akK/view?usp=sharing" id="pdNatalCakeGuide" rel="noopener noreferrer" target="_blank">Ver massas e recheios</a>
+<!-- Opções de Velas Numéricas -->
+
+<!-- Configuração de Bolos para Celebrar -->
+
+<!-- Configuração de Bolo Piscininha -->
+
+<!-- Seleção de Sabores de Salgadinhos & Brigadeiros -->
+
+<!-- Observação opcional -->
+<div class="bg-[#F7F2EA] border border-[#EDE5DC] p-4 space-y-3">
+<div class="flex items-center justify-between">
+
+<label class="text-[11px] font-bold uppercase tracking-wider text-[#38201D]" for="pdCustomNotes">🎂 Preferência de Sabor ou Observação (Opcional)</label>
+
+</div>
+<input class="w-full bg-white border border-gray-300 px-3.5 py-2.5 text-xs text-[#38201D] outline-none focus:border-[#38201D]" id="pdCustomNotes" placeholder="Ex: Massa branca, recheio de Brigadeiro ou Ninho, número da vela ou recadinho..." type="text"/>
+</div>
+<!-- Adicionais da Loja Principal -->
+
+<!-- Quantidade + Botão Adicionar à Sacola -->
+<div class="pt-2 space-y-3">
+<div class="flex items-stretch gap-3">
+<div class="flex items-center border border-gray-300 bg-white shrink-0">
+<button aria-label="Diminuir quantidade" class="w-10 h-full text-lg font-bold text-[#38201D] hover:bg-[#FAF7F2] transition-colors cursor-pointer" onclick="changePdQty(-1)" type="button">−</button>
+<input class="w-11 text-center font-bold text-sm text-[#38201D] bg-transparent outline-none" id="pdQtyInput" readonly="" type="text" value="1"/>
+<button aria-label="Aumentar quantidade" class="w-10 h-full text-lg font-bold text-[#38201D] hover:bg-[#FAF7F2] transition-colors cursor-pointer" onclick="changePdQty(1)" type="button">+</button>
+</div>
+<button class="flex-1 bg-[#38201D] hover:bg-[#C5A059] text-white py-4 px-6 font-bold text-xs uppercase tracking-[0.18em] shadow-lg transition-all cursor-pointer" id="pdAddToBagBtn" onclick="addProductFromDetailToBag()" type="button">
+                                    ADICIONAR À SACOLA
+                                </button>
+</div>
+<div class="bg-[#FAF7F2] border border-[#EDE5DC] p-3.5 text-[11px] text-[#38201D]/80 flex items-start gap-2.5 leading-relaxed">
+<span class="text-base leading-none">🚕</span>
+<div>
+<strong>Retirada em Belford Roxo ou Entrega Rápida (Uber Flash / 99):</strong> Agende o horário da sua retirada ou entrega diretamente na sacola antes de finalizar o pedido.
+                                </div>
+</div>
+</div>
+<!-- Descrição Completa + Peso/Validade + Ingredientes/Alergênicos -->
+<div class="border-t border-gray-200 pt-6 space-y-4">
+<div>
+<h2 class="font-serif font-bold text-xl text-[#38201D] mb-2.5">Descrição do Produto</h2>
+<div class="bg-white p-5 border border-gray-200/80 space-y-3">
+<div class="text-xs sm:text-[13px] text-[#38201D]/85 leading-relaxed space-y-2 whitespace-pre-line" id="pdFullDescription"></div>
+<div class="hidden pt-3 border-t border-gray-100 flex flex-wrap gap-x-6 gap-y-1.5 text-xs text-[#38201D]" id="pdWeightValidityMeta"></div>
+</div>
+</div>
+<details class="hidden group bg-white border border-gray-200/80 p-4 cursor-pointer" id="pdIngredientsAccordion">
+<summary class="font-serif font-bold text-base text-[#38201D] flex items-center justify-between list-none">
+<span>Ingredientes</span>
+<span class="text-[#C5A059] group-open:rotate-180 transition-transform">▼</span>
+</summary>
+<div class="text-xs text-[#38201D]/80 leading-relaxed mt-3 pt-3 border-t border-gray-100 whitespace-pre-line" id="pdIngredientsText"></div>
+</details>
+<details class="hidden group bg-white border border-gray-200/80 p-4 cursor-pointer" id="pdAllergensAccordion">
+<summary class="font-serif font-bold text-base text-[#38201D] flex items-center justify-between list-none">
+<span>Informações sobre Alergênicos</span>
+<span class="text-[#C5A059] group-open:rotate-180 transition-transform">▼</span>
+</summary>
+<div class="text-xs text-[#38201D]/85 font-medium leading-relaxed mt-3 pt-3 border-t border-gray-100 whitespace-pre-line" id="pdAllergensText"></div>
+</details>
+<details class="group bg-white border border-gray-200/80 p-4 cursor-pointer">
+<summary class="font-serif font-bold text-base text-[#38201D] flex items-center justify-between list-none">
+<span>Informações Importantes, Peso &amp; Conservação</span>
+<span class="text-[#C5A059] group-open:rotate-180 transition-transform">▼</span>
+</summary>
+<div class="text-xs text-[#38201D]/80 leading-relaxed mt-3 pt-3 border-t border-gray-100 space-y-1.5">
+<p>• <strong>Produção:</strong> Elaborado diariamente com ingredientes selecionados e acabamento impecável.</p>
+<p>• <strong>Retirada e Entrega:</strong> Retire em Belford Roxo (Centro) ou solicite envio por Uber Flash / 99 Entregas.</p>
+<p>• <strong>Conservação:</strong> Bolos e doces refrigerados têm validade de até 3 dias. Panettones e biscoitos devem ser mantidos em local fresco e seco.</p>
+</div>
+</details>
+<div class="flex items-center justify-between pt-1 text-xs text-[#6E5034]">
+<span class="font-semibold">Compartilhe este item:</span>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 bg-white border border-gray-200 hover:border-[#25D366] text-[#38201D] font-bold text-[11px] cursor-pointer" onclick="shareCurrentProductWhatsApp()" type="button">WhatsApp ↗</button>
+<button class="px-3 py-1.5 bg-white border border-gray-200 hover:border-[#C5A059] text-[#38201D] font-bold text-[11px] cursor-pointer" onclick="copyCurrentProductName()" type="button">Copiar Info</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Produtos Relacionados -->
+<div class="mt-16 pt-10 border-t border-gray-200">
+<div class="text-center max-w-xl mx-auto mb-8">
+<span class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C5A059]">COMBINE COM SEU PEDIDO</span>
+<h3 class="font-serif text-2xl sm:text-3xl font-bold text-[#38201D] mt-1">Outros clientes também escolheram</h3>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6" id="pdRelatedGrid"></div>
+</div>
+</section>
+</div>
+<div class="view-section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 hidden" id="view-checkout">
+<div class="flex items-center justify-center gap-2 sm:gap-6 mb-8 text-xs sm:text-sm font-bold uppercase tracking-wider text-[#38201D]/50 text-center">
+<span class="pb-1" id="step1Indicator">1. Carrinho de Compras</span>
+<span>&gt;</span>
+<span class="text-[#38201D] border-b-2 border-[#C5A059]" id="step2Indicator">2. Detalhes &amp; Pré-Cadastro</span>
+<span>&gt;</span>
+<span id="step3Indicator">3. Conferência do pedido</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 hidden" id="checkoutStep1">
+<div class="lg:col-span-2 space-y-6">
+<div class="bg-white p-6 rounded-none border border-gray-200 shadow-sm">
+<h2 class="font-serif text-2xl font-bold text-[#38201D] mb-4">Itens no seu Carrinho</h2>
+<div class="divide-y divide-[#EDE5DC]" id="cartItemsList"></div>
+<div class="flex justify-between items-center pt-6 mt-4 border-t border-gray-200">
+<button class="text-xs font-bold text-[#38201D] hover:text-[#C5A059]" onclick="openNatalPage('all')">← Voltar ao Natal 2026</button>
+<button class="text-xs font-bold text-red-600 hover:underline" onclick="clearCart()">Esvaziar Carrinho</button>
+</div>
+</div>
+
+</div>
+<div class="space-y-6">
+<div class="bg-white p-6 rounded-none border border-gray-200 shadow-sm sticky top-28">
+<h3 class="font-serif text-xl font-bold text-[#38201D] mb-4">Total no Carrinho</h3>
+<div class="space-y-3 text-sm border-b border-gray-200 pb-4">
+<div class="flex justify-between"><span class="text-[#38201D]/70">Subtotal dos Itens</span><span class="font-bold text-[#38201D]" id="summarySubtotal">R$ 0,00</span></div>
+</div>
+<div class="flex justify-between items-center py-4">
+<span class="font-serif font-bold text-lg text-[#38201D]">Total Final</span>
+<span class="font-serif text-2xl font-bold text-[#38201D]" id="summaryTotal">R$ 0,00</span>
+</div>
+<button class="w-full bg-[#38201D] hover:bg-[#C5A059] text-white py-4 rounded-none font-bold text-sm tracking-wide transition-all shadow-lg mt-2" onclick="goToCheckoutStep2()">Continuar para Finalização ➔</button>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8" id="checkoutStep2">
+<div class="lg:col-span-2 space-y-6">
+<div class="bg-white p-6 sm:p-8 rounded-none border border-gray-200 shadow-sm">
+<h2 class="font-serif text-2xl font-bold text-[#38201D] mb-6">Detalhes da Compra &amp; Pré-Cadastro</h2>
+<form class="space-y-4" id="orderForm" onsubmit="submitOrder(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div><label class="block text-xs font-bold uppercase text-[#38201D]/70 mb-1">Nome Completo *</label><input class="w-full bg-[#FAF7F2] border border-gray-200 rounded-none px-4 py-3 text-sm outline-none" id="clientName" required="" type="text"/></div>
+<div><label class="block text-xs font-bold uppercase text-[#38201D]/70 mb-1">WhatsApp / Celular *</label><input class="w-full bg-[#FAF7F2] border border-gray-200 rounded-none px-4 py-3 text-sm outline-none" id="clientPhone" required="" type="tel"/></div>
+</div>
+
+<fieldset class="space-y-4 text-sm" disabled="" hidden="" id="natalOrderFields">
+<legend class="font-serif text-xl font-bold">Encomenda de Natal 2026</legend>
+<p>Pedidos até terça-feira, 22/12, enquanto houver vagas. O ateliê confirmará o horário pelo WhatsApp. Os produtos acompanham embalagem pronta para ir à mesa.</p>
+<label class="block text-sm font-semibold">Como deseja receber?<select class="w-full bg-[#FAF7F2] border border-gray-200 rounded-none px-4 py-3 text-sm outline-none" id="natalMode" onchange="updateNatalFields()" required=""><option value="">Selecione</option><option value="retirada">Retirada no ateliê em Belford Roxo</option><option value="Uber Flash">Uber Flash — Carro</option><option value="99 Entregas">99 Entregas — Carro</option></select></label>
+<p id="natalReceivingTerms"></p>
+<label hidden="" id="natalAddressLabel">Endereço de entrega<input class="w-full bg-[#FAF7F2] border border-gray-200 rounded-none px-4 py-3 text-sm outline-none" id="natalAddress"/></label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<label class="block text-sm font-semibold">Dia do recebimento<select class="w-full bg-[#FAF7F2] border border-gray-200 rounded-none px-4 py-3 text-sm outline-none" id="natalDay" onchange="updateNatalFields()" required=""><option value="">Selecione</option><option value="23">23/12 — quarta-feira, 10h às 19h</option><option value="24">24/12 — quinta-feira, 10h às 16h</option></select></label>
+<label>Horário desejado<input class="w-full bg-[#FAF7F2] border border-gray-200 rounded-none px-4 py-3 text-sm outline-none" id="natalTime" min="10:00" required="" type="time"/></label>
+</div>
+<label class="block text-sm font-semibold">Como deseja pagar o sinal de 50%?<select class="w-full bg-[#FAF7F2] border border-gray-200 rounded-none px-4 py-3 text-sm outline-none" id="natalPay" required=""><option value="">Selecione</option><option value="Pix">Pix</option><option value="Cartão">Cartão</option></select></label>
+<p id="natalAmounts"></p>
+<label class="block"><input id="natalAccept" required="" type="checkbox"/> Li e aceito as condições de reserva, pagamento e recebimento acima.</label>
+</fieldset>
+<div class="pt-4 border-t border-gray-200 flex items-center justify-between">
+<button class="text-xs font-bold text-[#38201D]" onclick="goToCheckoutStep1()" type="button">← Voltar</button>
+<button class="bg-[#38201D] hover:bg-[#C5A059] text-white px-8 py-4 rounded-none font-bold text-sm shadow-lg" type="submit">Gerar PIX &amp; Finalizar ➔</button>
+</div>
+</form>
+</div>
+</div>
+<div>
+<div class="bg-white p-6 rounded-none border border-gray-200 shadow-sm sticky top-28">
+<h3 class="font-serif text-xl font-bold text-[#38201D] mb-4">Resumo do Pedido</h3>
+<div class="space-y-2 text-xs border-b border-gray-200 pb-4 mb-4" id="summaryItemsList2"></div>
+<div class="flex justify-between items-center py-2"><span class="font-serif font-bold text-lg text-[#38201D]">Total do pedido</span><span class="font-serif text-2xl font-bold text-[#38201D]" id="summaryTotal2">R$ 0,00</span></div>
+</div>
+</div>
+</div>
+<div class="hidden max-w-2xl mx-auto bg-white p-8 sm:p-12 rounded-none border border-gray-200 shadow-xl text-center space-y-6" id="checkoutStep3">
+<div class="w-16 h-16 rounded-none bg-green-100 text-green-600 flex items-center justify-center mx-auto text-2xl">✓</div>
+<div>
+<span class="text-xs uppercase font-bold text-[#C5A059] tracking-widest" id="orderStatus">Pedido Realizado com Sucesso!</span>
+<h2 class="font-serif text-3xl font-bold text-[#38201D] mt-1">Pedido <span id="finalOrderNumber">#AM-2026-9481</span></h2>
+<p class="text-xs sm:text-sm text-[#38201D]/70 mt-2">Envie o pedido diretamente para o WhatsApp da Andressa Meireles Confeitaria.</p>
+</div>
+<div class="text-left text-sm space-y-3" hidden="" id="natalReview">
+<p id="natalReviewText" style="white-space:pre-line"></p>
+<button class="text-xs font-bold" onclick="if (!natalOrdersOpen()) return; orderField('checkoutStep3').classList.add('hidden'); orderField('step3Indicator').classList.remove('text-[#38201D]', 'border-b-2', 'border-[#C5A059]'); goToCheckoutStep2()" type="button">← Editar pedido</button>
+</div>
+
+<button class="w-full bg-green-600 hover:bg-green-700 text-white py-4 rounded-none font-bold text-base shadow-lg flex items-center justify-center gap-3" onclick="sendOrderToWhatsApp()">
+<span>Enviar Pedido Pronto no WhatsApp</span>
+</button>
+</div>
+</div>
+</main>
+
+<footer class="mt-16 border-t border-[#E6DCCF] bg-white"><div class="max-w-7xl mx-auto px-4 sm:px-6 py-7 flex flex-col sm:flex-row items-center justify-between gap-3"><div class="flex items-center gap-3"><span class="am-seal" aria-hidden="true"></span><span class="font-serif text-lg">Andressa Meireles <span class="italic">Confeitaria</span></span></div><a class="natal-footer-whatsapp" href="https://wa.me/5521981541545?text=Ol%C3%A1%2C%20Andressa!%20Vim%20pelo%20cat%C3%A1logo%20de%20Natal%202026%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida." target="_blank" rel="noopener noreferrer">Fale pelo WhatsApp ↗</a><p class="text-[11px] text-[#6E5034]">© 2026 Andressa Meireles Confeitaria · Catálogo exclusivo de Natal</p></div></footer>
+<a class="natal-whatsapp-float" href="https://wa.me/5521981541545?text=Ol%C3%A1%2C%20Andressa!%20Vim%20pelo%20cat%C3%A1logo%20de%20Natal%202026%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida." target="_blank" rel="noopener noreferrer" aria-label="Conversar com Andressa pelo WhatsApp" title="Fale pelo WhatsApp">
+  <img src="assets/whatsapp-3d.svg" alt="" aria-hidden="true" width="72" height="72" decoding="async">
+  <span>WhatsApp</span>
+</a>
+<script defer src="assets/natal.js?v=20261123-3"></script>
+</body></html>
